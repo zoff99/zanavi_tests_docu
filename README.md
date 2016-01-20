@@ -32,7 +32,7 @@ to:
 success:
     source: '&lt;src1>' # currently ignored
     item: '&lt;item1>'
-    value: &lt;expected value as int number OR string value>
+    value: &lt;expected value as int number OR string value UTF-8>
     operator: '&lt;ops1>'
 </pre>
 
@@ -40,6 +40,15 @@ success:
 
 <b>for search test:</b>
 <pre>
+input:
+  street: '&lt;string UTF-8 OR empty>'
+  city: '&lt;string UTF-8 OR empty>'
+  housenumber: '&lt;string UTF-8 OR empty>'
+[optional blank lines]
+success:
+    item: '&lt;item2>'
+    value: &lt;expected value as int number OR string value UTF-8>
+    operator: '&lt;ops2>'
 </pre>
 
 
@@ -49,6 +58,20 @@ success:
 ==
 !=
 &lt;>
+>
+&lt;
+=>
+>=
+&lt;=
+=&lt;
+</pre>
+
+<b>accepted values for ops2 (only the first 4 are accepted for string values):</b>
+<pre>
+==
+!=
+&lt;>
+like
 >
 &lt;
 =>
@@ -68,5 +91,11 @@ gpx # only with nodes, nav&lt;n>
 nodes
 status
 nav&lt;n> # n is the number of the n-th navigation item to be used for the criterion
+</pre>
+
+<b>accepted values for item2:</b>
+<pre>
+resultcount
+result&lt;n> # n is the number of the n-th result item to be used for the criterion
 </pre>
 
