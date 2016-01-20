@@ -3,7 +3,7 @@ ZANavi Tests Documentation
 
 <b>filename:</b>
 <pre>
-[a-zA-Z0-9][_-].yaml
+[a-zA-Z0-9_-]*.yaml
 </pre>
 
 <b>file specs:</b>
