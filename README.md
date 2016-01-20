@@ -22,18 +22,18 @@ each test file can only contain exactly 1 test with 1 success criterion
 <pre>
 from:
   lat: &lt;latitude as float number>
-  lng: <longitude as float number>
-[  heading: <heading as float number>]
+  lng: &lt;longitude as float number>
+[  heading: &lt;heading as float number>]
 [optional blank lines]
 to:
-  lat: <latitude as float number>
-  lng: <longitude as float number>
+  lat: &lt;latitude as float number>
+  lng: &lt;longitude as float number>
 [optional blank lines]
 success:
-    source: '<src1>' # currently ignored
-    item: '<item1>'
-    value: <expected value as int number OR string value>
-    operator: '<ops1>'
+    source: '&lt;src1>' # currently ignored
+    item: '&lt;item1>'
+    value: &lt;expected value as int number OR string value>
+    operator: '&lt;ops1>'
 </pre>
 
 
@@ -48,25 +48,25 @@ success:
 <pre>
 ==
 !=
-<>
+&lt;>
 >
-<
+&lt;
 =>
 >=
-<=
-=<
+&lt;=
+=&lt;
 </pre>
 
 <b>accepted values for src1:</b>
 <pre>
 dbus # only with status
-gpx # only with nodes, nav<n>
+gpx # only with nodes, nav&lt;n>
 </pre>
 
 <b>accepted values for item1:</b>
 <pre>
 nodes
 status
-nav<n> # n is the number of the n-th navigation item to be used for the criterion
+nav&lt;n> # n is the number of the n-th navigation item to be used for the criterion
 </pre>
 
