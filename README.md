@@ -90,12 +90,12 @@ gpx # only with nodes, nav&lt;n>
 <pre>
 nodes
 status
-nav&lt;n> # n is the number of the n-th navigation item to be used for the criterion
+nav&lt;n> # n is the number of the n-th navigation item to be used for the criterion (counting starts from zero!)
 </pre>
 
 <b>accepted values for item2:</b>
 <pre>
 resultcount
-result&lt;n> # n is the number of the n-th result item to be used for the criterion
+result&lt;n> # n is the number of the n-th result item to be used for the criterion (counting starts from zero!)
 </pre>
 
