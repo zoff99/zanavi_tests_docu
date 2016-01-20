@@ -21,7 +21,7 @@ each test file can only contain exactly 1 test with 1 success criterion
 <b>for routing test:</b>
 <pre>
 from:
-  lat: <latitude as float number>
+  lat: &lt;latitude as float number>
   lng: <longitude as float number>
 [  heading: <heading as float number>]
 [optional blank lines]
