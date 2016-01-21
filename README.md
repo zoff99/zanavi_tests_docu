@@ -30,7 +30,7 @@ to:
   lng: &lt;longitude as float number>
 [optional blank lines]
 success:
-    source: '&lt;src1>' # currently ignored
+    source: '&lt;src1>'
     item: '&lt;item1>'
     value: &lt;expected value as int number OR string value UTF-8>
     operator: '&lt;ops1>'
