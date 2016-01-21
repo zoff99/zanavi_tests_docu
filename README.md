@@ -14,7 +14,7 @@ each test file can only contain exactly 1 test with 1 success criterion
 
 <b>file content:</b>
 <pre>
-[type:S] -> optional to specify a "search" test, otherwise it's a routing test
+[type: '&lt;searchtype1>'] # optional, if not specified then do a routing test
 </pre>
 
 
@@ -84,6 +84,13 @@ like # this is just an exact substring comparsion, NO conversion is done
 <pre>
 dbus # only with status
 gpx # only with nodes, nav&lt;n>
+</pre>
+
+<b>accepted values for searchtype1:</b>
+<pre>
+RT # routing test
+NS # normal search test
+IS # index search test
 </pre>
 
 <b>accepted values for item1:</b>
