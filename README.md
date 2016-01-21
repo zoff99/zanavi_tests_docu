@@ -71,7 +71,7 @@ success:
 ==
 !=
 &lt;>
-like # this is just an exact substring comparsion, NO conversion is done
+like # this is just an exact substring comparsion, NO conversion or REGEX
 >
 &lt;
 =>
